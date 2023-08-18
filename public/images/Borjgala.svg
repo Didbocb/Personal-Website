@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="490" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g transform="translate(239,244.1)">
+    <path id="Cresc" transform="translate(0.5,-0.1)" d="M-10.294,244.024C-120.274,194.616-114.952,47.723-1.21-0.128C-182.399-29.113-187.058,257.58-10.294,244.024Z"
+       style="fill:#800000;stroke:#800000;stroke-width:1px;stroke-linejoin:miter"/>
+    <use xlink:href="#Cresc" transform="rotate(51.42857)"/>
+    <use xlink:href="#Cresc" transform="rotate(102.85714)"/>
+    <use xlink:href="#Cresc" transform="rotate(154.28571)"/>
+    <use xlink:href="#Cresc" transform="rotate(205.71429)"/>
+    <use xlink:href="#Cresc" transform="rotate(257.14286)"/>
+    <use xlink:href="#Cresc" transform="rotate(308.57143)"/>
+  </g>
+</svg>
