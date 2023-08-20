@@ -1,65 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Root styles */
 :root {
-  --bg-primary: #2c0303;
-  --bg-secondary: #443838;
+  --bg-primary: #2E0000;
+  --bg-secondary: #1E1E1E;
   --bg-header: rgba(68, 5, 5, 0.8);
   --fg-primary: rgba(255, 255, 255, 0.87);
-  --fg-secondary: #ddc2ff;
-  --fg-tertiary: #ff69c0;
-  --fg-varient: #da0303;
-  --error: #cf6679;
+  --fg-secondary: #DDDDDD;
+  --fg-tertiary: #FF4444;
+  --fg-varient: #FF8888;
+  --error: #CF6679;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--fg-primary);
+  background-color: var(--bg-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
+  margin: 0 auto;
 }
 
+/* Custom scrollbar styles */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-.app-content {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
 }
 
-*,
-*::before,
-*::after {
+::-webkit-scrollbar-thumb {
+  background: var(--fg-varient);
+  border-radius: 0.4vw;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Container for app content */
+.app-content {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
+/* Main content area */
+main {
+  flex: 1;
+  margin: 4ch auto !important;
+  width: 600px;
+}
+
+/* Hyperlink styles */
+a {
+  font-weight: 500;
+  color: var(--fg-varient);
+  text-decoration: inherit;
+  transition: color 0.4s;
+}
+
+a:hover {
+  color: var(--fg-tertiary);
+}
+
+/* Body styles */
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@media only screen and (min-width: 1920px) {
+  main {
+    width: calc(100vw / 3) !important;
+  }
 }

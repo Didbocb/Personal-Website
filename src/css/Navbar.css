@@ -1,48 +1,50 @@
+/* Styles for the header */
 header {
   z-index: 1;
   position: sticky;
   top: 0;
   background: var(--bg-header);
   backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7x);
+  -webkit-backdrop-filter: blur(7px);
 }
 
+/* Styles for the navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    margin: 0 auto;
-    background-color: var(--bg-primary);
-    color: white;
-    min-width: 700px;
-  }
-  
-  .navbar-logo {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .navbar-link {
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 5px;
-  }
-  
-  .navbar-link:hover {
-    background-color: #555;
-  }  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+  color: white;
+}
 
-  .navbar-text-link {
-    text-decoration: none;
-    color: var(--bg-secondary);
-    transition: color 0.4s;
+/* Styles for the navbar logo */
+.navbar-logo {
+  font-family: 'Tilt Neon';
+  cursor: pointer;
+  color: var(--fg-varient);
+}
+
+/* Styles for the navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Styles for individual navbar links */
+.navbar-link {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Styles for text-based navbar links */
+.navbar-text-link {
+  text-decoration: none;
+  color: var(--fg-primary);
+  transition: color 0.4s;
 }
 
 .navbar-text-link:hover {
