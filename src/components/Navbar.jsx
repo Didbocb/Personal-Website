@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { AiOutlineMenu } from 'react-icons/ai';
 import { motion } from "framer-motion";
 import '../css/Navbar.css';
 
-// Animation variant for the header
+// Animation for the header
 const loadAnimation = {
     initial: { y: "-200%" },
     animate: { y: 0 },
@@ -30,7 +29,7 @@ const Navbar = () => {
                     <li><Link to="/" className="navbar-text-link">Home</Link></li>
                     <li><Link to="/about" className="navbar-text-link">About Me</Link></li>
                     <li><Link to="/projects" className="navbar-text-link">Projects</Link></li>
-                    <li><Link to="/resume" className="navbar-text-link">Resume</Link></li>
+                    <li><a href="https://google.com" className="navbar-text-link resume" target="_blank">Resume</a></li> {/* test link */}
                 </ul>
             </nav>
         </motion.header>

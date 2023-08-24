@@ -13,15 +13,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.1rem;
   margin: 0 auto;
   background-color: var(--bg-primary);
   color: white;
+  min-width: 700px;
 }
 
 /* Styles for the navbar logo */
 .navbar-logo {
-  font-family: 'Tilt Neon';
+  font-family: "Poppins";
   cursor: pointer;
   color: var(--fg-varient);
 }
@@ -50,3 +51,15 @@ header {
 .navbar-text-link:hover {
   color: var(--fg-varient);
 }
+
+.resume {
+  border: 2px solid var(--fg-varient);
+  padding: 1ch 1ch;
+  border-radius: 10px;
+}
+
+/*
+.navbar-text-link:active {
+  background-color: crimson;
+}
+*/

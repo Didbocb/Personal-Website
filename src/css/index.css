@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-/* Root styles */
 :root {
   --bg-primary: #2E0000;
   --bg-secondary: #1E1E1E;
@@ -39,7 +38,9 @@
   border-radius: 0.4vw;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -47,7 +48,9 @@
 
 /* Container for app content */
 .app-content {
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -70,13 +73,6 @@ a {
 
 a:hover {
   color: var(--fg-tertiary);
-}
-
-/* Body styles */
-body {
-  width: 100%;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 @media only screen and (min-width: 1920px) {
