@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import '../css/Navbar.css';
 
@@ -19,16 +19,16 @@ const Navbar = () => {
         >
             <nav className="navbar">
                 {/* Link to the home page */}
-                <Link to={'/'}>
+                <NavLink to={'/'}>
                     <div className="navbar-logo">
                         <h2 className='h1'>Lado Natsvlishvili</h2>
                     </div>
-                </Link>
+                </NavLink>
                 {/* List of navigation links */}
                 <ul className="navbar-links">
-                    <li><Link to="/" className="navbar-text-link">Home</Link></li>
-                    <li><Link to="/about" className="navbar-text-link">About Me</Link></li>
-                    <li><Link to="/projects" className="navbar-text-link">Projects</Link></li>
+                    <li><NavLink to="/" className="navbar-text-link">Home</NavLink></li>
+                    <li><NavLink to="/about" className="navbar-text-link">About Me</NavLink></li>
+                    <li><NavLink to="/projects" className="navbar-text-link">Projects</NavLink></li>
                     <li><a href="https://google.com" className="navbar-text-link resume" target="_blank">Resume</a></li> {/* test link */}
                 </ul>
             </nav>
