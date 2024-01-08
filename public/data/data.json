@@ -1,0 +1,81 @@
+{
+    "content": {
+        "portfolio": {
+            "technical_skills": [
+                {
+                    "name": "Java",
+                    "tags": [
+                        "Programming Languages"
+                    ]
+                },
+                {
+                    "name": "C",
+                    "tags": [
+                        "Programming Languages"
+                    ]
+                },
+                {
+                    "name": "Python",
+                    "tags": [
+                        "Programming Languages"
+                    ]
+                },
+                {
+                    "name": "HTML",
+                    "tags": [
+                        "Web Development"
+                    ]
+                },
+                {
+                    "name": "CSS",
+                    "tags": [
+                        "Web Development"
+                    ]
+                },
+                {
+                    "name": "Javascript",
+                    "tags": [
+                        "Programming Languages",
+                        "Web Development"
+                    ]
+                },
+                {
+                    "name": "React",
+                    "tags": [
+                        "Web Development",
+                        "Libraries"
+                    ]
+                },
+                {
+                    "name": "Node.js",
+                    "tags": [
+                        "Web Development",
+                        "Frameworks"
+                    ]
+                }
+            ],
+            "dev_tools": [
+                {
+                    "name": "VSCode",
+                    "tags": []
+                },
+                {
+                    "name": "Github",
+                    "tags": []
+                },
+                {
+                    "name": "Git",
+                    "tags": []
+                },
+                {
+                    "name": "Firebase",
+                    "tags": []
+                }
+            ]
+        },
+        "typewriter_options": [
+            "Computer Science Student", 
+            "Full Stack Developer"
+        ]
+    }
+}

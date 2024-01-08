@@ -29,7 +29,7 @@ const Navbar = () => {
                     <li><NavLink to="/" className="navbar-text-link">Home</NavLink></li>
                     <li><NavLink to="/about" className="navbar-text-link">About Me</NavLink></li>
                     <li><NavLink to="/projects" className="navbar-text-link">Projects</NavLink></li>
-                    <li><a href="https://google.com" className="navbar-text-link resume" target="_blank">Resume</a></li> {/* test link */}
+                    <li><a href="data/Lado_Natsvlishvili_Resume.pdf" className="navbar-text-link resume" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </motion.header>

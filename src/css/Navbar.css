@@ -48,18 +48,20 @@ header {
   transition: color 0.4s;
 }
 
+/* Hover effect on navbar links */
 .navbar-text-link:hover {
   color: var(--fg-varient);
 }
 
+/* Styles for resume link */
 .resume {
   border: 2px solid var(--fg-varient);
   padding: 1ch 1ch;
   border-radius: 10px;
 }
 
-/*
+/* Active state for navbar text link */
 .navbar-text-link:active {
-  background-color: crimson;
+  background-color: var(--fg-tertiary);
+  border-radius: 4px;
 }
-*/

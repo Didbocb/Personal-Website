@@ -1,0 +1,104 @@
+/* Styles for the introduction section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7ch;
+}
+
+/* Styles for the typewriter text */
+.typewriter {
+    color: var(--fg-secondary);
+}
+
+/* Styles for the profile section */
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/* Styles for the profile heading */
+.profile h1 {
+    margin-bottom: 0.5ch;
+}
+
+/* Styles for the profile headshot */
+.headshot {
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--fg-primary);
+}
+
+/* Styles for the contacts section */
+.contacts {
+    width: 90%;
+    margin: 2ch auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3ch;
+}
+
+/* Styles for contact links */
+.contacts a {
+    width: 20%;
+}
+
+/* Styles for contact images */
+.contacts img {
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+/* Special styling for the third contact image */
+.contacts a:nth-child(3) img {
+    padding: 6px;
+}
+
+/* Special styling for the fourth contact image */
+.contacts a:nth-child(4) img {
+    width: 110% !important; 
+}
+
+/* Styles for the skills section */
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+}
+
+/* Responsive adjustments for profile section on smaller screens */
+@media only screen and (max-width: 520px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1ch;
+    }
+}
+
+/* Responsive adjustments for padding on profile section */
+@media only screen and (max-width: calc(600px + 4ch)) {
+    .profile {
+        padding: 0 2ch;
+    }
+}
+
+/* Responsive adjustments for spacing between social links */
+@media only screen and (max-width: 600px) {
+    .contacts {
+        gap: 1ch;
+    }
+}
+
+/* Responsive adjustments for width and gap on smaller screens */
+@media only screen and (max-width: 500px) {
+    .contacts {
+        width: 100%;
+        gap: 0;
+    }
+}

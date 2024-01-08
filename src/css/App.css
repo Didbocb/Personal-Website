@@ -1,9 +1,8 @@
 /* Styles for section headers */
 .section-header {
   --underline-offset: 0.3ch;
-
   text-decoration: underline;
-  text-decoration-color: var(--bg-secondary);
+  text-decoration-color: var(--fg-varient);
   text-decoration-thickness: 0.25ch;
   text-underline-offset: var(--underline-offset);
   text-indent: 0.5rem;
@@ -75,6 +74,6 @@
 /* Resize main element */
 @media only screen and (max-width: calc(600px + 4ch)) {
   main {
-      width: calc(100% - 2ch) !important; 
+    width: calc(100% - 2ch) !important; 
   }
 }

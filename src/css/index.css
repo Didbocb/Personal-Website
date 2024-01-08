@@ -1,14 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-
+/* Root variables for color scheme */
 :root {
-  --bg-primary: #2E0000;
-  --bg-secondary: #1E1E1E;
-  --bg-header: rgba(68, 5, 5, 0.8);
-  --fg-primary: rgba(255, 255, 255, 0.87);
-  --fg-secondary: #DDDDDD;
-  --fg-tertiary: #FF4444;
-  --fg-varient: #FF8888;
-  --error: #CF6679;
+  --bg-primary: #1C1C1C;
+  --bg-secondary: #0D0D0D;
+  --bg-header: rgba(28, 28, 28, 0.9);
+  --fg-primary: rgba(255, 255, 255, 0.92);
+  --fg-secondary: #BBBBBB;
+  --fg-tertiary: #FF6666;
+  --fg-varient: #FFB3B3;
+  --error: #FF8C8C;
 
   color: var(--fg-primary);
   background-color: var(--bg-primary);
@@ -38,6 +37,7 @@
   border-radius: 0.4vw;
 }
 
+/* Global reset for margin, padding, and box-sizing */
 *,
 *::before,
 *::after {
@@ -71,10 +71,12 @@ a {
   transition: color 0.4s;
 }
 
+/* Hover effect on hyperlinks */
 a:hover {
   color: var(--fg-tertiary);
 }
 
+/* Responsive adjustments for main content width on large screens */
 @media only screen and (min-width: 1920px) {
   main {
     width: calc(100vw / 3) !important;
