@@ -42,7 +42,7 @@ export default function Home({ data }) {
                 </p>
 
                 <div className="contacts">
-                    <a href="https://github.com/Columbium41" target="_blank">
+                    <a href="https://github.com/Didbocb" target="_blank">
                         <img src="/images/github.svg" alt="Github" />
                     </a>
                     <a href="https://www.linkedin.com/in/lado-natsvlishvili/" target="_blank">

@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: center;
     gap: 7ch;
+    justify-content: center;
+    height: 100vh;
 }
 
 /* Styles for the typewriter text */
@@ -14,9 +16,10 @@
 /* Styles for the profile section */
 .profile {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1ch;
 }
 
 /* Styles for the profile heading */
@@ -26,20 +29,20 @@
 
 /* Styles for the profile headshot */
 .headshot {
-    width: 120px;
+    width: 200px;
     border-radius: 50%;
-    border: 1px solid var(--fg-primary);
+    border: 2px solid var(--fg-primary);
 }
 
 /* Styles for the contacts section */
 .contacts {
-    width: 90%;
-    margin: 2ch auto 0 auto;
+    width: 40%;
+    margin: 5ch auto 2ch auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 3ch;
+    gap: 2ch;
 }
 
 /* Styles for contact links */
@@ -51,12 +54,12 @@
 .contacts img {
     width: 100%;
     vertical-align: middle;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 /* Special styling for the third contact image */
 .contacts a:nth-child(3) img {
-    padding: 6px;
+    padding: 0px;
 }
 
 /* Special styling for the fourth contact image */
