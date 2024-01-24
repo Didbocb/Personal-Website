@@ -33,7 +33,7 @@ export default function Home({ data }) {
             </div>
             
             {/* About Me Section */}
-            <div className="text-section w-100">
+            <div className="text-section">
                 <h2 className="section-header">Introduction</h2>
 
                 <p>
