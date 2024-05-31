@@ -1,8 +1,14 @@
-import React from 'react';
-import useDocumentTitle from '../hooks/useDocumentTitle';
+import React, { useEffect } from 'react';
 
-export default function Projects({ data }) {
-  const { documentTitle, setDocumentTitle } = useDocumentTitle('Projects');
+export default function Projects({ data, setDocumentTitle }) {
+    useEffect(() => {
+        setDocumentTitle("Projects");
+    }, [setDocumentTitle]);
 
-  return <h1>Projects</h1>;
+    return (
+        <div className="projects">
+            <h1>Projects Page</h1>
+            {/* Projects page content */}
+        </div>
+    );
 }

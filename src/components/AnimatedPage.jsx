@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 // Animation properties to apply to the AnimatedPage component
 const animation = {
-    initial: { opacity: 0, y: "5vh" },
-    animate: { opacity: 1, y: 0 },
-    exit: { opacity: 0, y: "5vh" },
+    initial: { opacity: 0, y: 100, scale: 0.8 },
+    animate: { opacity: 1, y: 0, scale: 1 },
+    exit: { opacity: 0, y: -100, scale: 0.8 },
 }
 
 /**
@@ -23,7 +23,10 @@ function AnimatedPage({ children, className }) {
           initial="initial" 
           animate="animate" 
           exit="exit"
-          transition={{ duration: 0.4, ease: "easeIn" }}
+          transition={{
+            duration: 0.6,
+            ease: 'backInOut', // Using a built-in easing function
+          }}
         >
             {children}
         </motion.div>

@@ -3,44 +3,34 @@ import './css/App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ErrorOverlay from './components/ErrorOverlay';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import { BrowserRouter as Router } from 'react-router-dom';
 import useFetch from './hooks/useFetch';
-import useDocumentTitle from './hooks/useDocumentTitle'; // Adjust the path
+import useDocumentTitle from './hooks/useDocumentTitle';
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 function App() {
   const data = useFetch('./data/data.json');
-  const { documentTitle, setDocumentTitle } = useDocumentTitle('Home');
+  const { setDocumentTitle } = useDocumentTitle('Home');
 
   if (data === undefined) {
     return <ErrorOverlay />;
   }
 
   return (
-    <Router>
-      <div className='App'>
+    <div className='App'>
+      <Router basename="/">
         <div className='app-content'>
           <Navbar />
-          <Routes>
-            <Route
-              path="/"
-              element={<Home data={data} setTitle={() => setDocumentTitle('Home')} />}
+          <main>
+            <AnimatedRoutes
+              data={data}
+              setDocumentTitle={setDocumentTitle}
             />
-            <Route
-              path="/about"
-              element={<About data={data} setTitle={() => setDocumentTitle('About')} />}
-            />
-            <Route
-              path="/projects"
-              element={<Projects data={data} setTitle={() => setDocumentTitle('Projects')} />}
-            />
-          </Routes>
+          </main>
           <Footer />
         </div>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 

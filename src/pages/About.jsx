@@ -1,8 +1,14 @@
-import React from 'react';
-import useDocumentTitle from '../hooks/useDocumentTitle';
+import React, { useEffect } from 'react';
 
-export default function About({ data }) {
-  const { documentTitle, setDocumentTitle } = useDocumentTitle('About');
+export default function About({ data, setDocumentTitle }) {
+    useEffect(() => {
+        setDocumentTitle("About");
+    }, [setDocumentTitle]);
 
-  return <h1>Lado Natsvlishvili</h1>;
+    return (
+        <div className="about">
+            <h1>About Page</h1>
+            {/* About page content */}
+        </div>
+    );
 }
